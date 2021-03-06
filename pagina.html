@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script languaje="javascript" type="text/javascript" src="funciones.js"></script>
+</head>
+
+<body>
+
+    <h2>HTML Forms</h2>
+
+    <form name="frmDatos" action="https://www.google.com" onsubmit="return(validar(frmDatos));">
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" required><br>
+
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname"><br><br>
+
+        <fieldset>
+            <legend>Selecciona una opción</legend>
+            </br>
+            <span>Estatus</span>
+            <select name="estatus">
+                <option value="1">Seleccione una opcion</option>
+                <option value="2">Inscrito</option>
+                <option value="3" >No inscrito</option>                
+            </select>
+        </fieldset>
+
+        <input type="radio" name="sexo" value="H" required>Hombre</input>
+        <input type="radio" name="sexo" value="M" required>Mujer</input>
+
+
+        <input type="submit" value="Submit">
+    </form>
+
+    <p>If you click the "Submit" button, the form-data will be sent to a page called "/action_page.php".</p>
+
+</body>
+
+</html>
